@@ -6,7 +6,7 @@ ulimit -l 262144
 POOL=
 WALLET=
 PASSWD=
-CURR=monero7
+CURR=monero
 
 if [[ -f /etc/xmr-stak/config.txt && -f /etc/xmr-stak/pools.txt && -f /etc/xmr-stak/cpu.txt ]]; then
   docker run -d --rm --name xmr-stak-cpu -v /etc/xmr-stak:/etc/xmr-stak:ro merxnet/xmr-stak-cpu \
